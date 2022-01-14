@@ -3,12 +3,11 @@
 pragma solidity 0.8.10;
 
 import "@openzeppelin/contracts/utils/introspection/IERC165.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
 /**
  * @dev Required interface of an ERC721 compliant contract.
  */
-interface IERC721Template is IERC165, ERC721Enumerable {
+interface IERC721Template is IERC165 {
     /**
      * @dev Emitted when `tokenId` token is transferred from `from` to `to`.
      */
