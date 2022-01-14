@@ -9,11 +9,13 @@ import "../interfaces/IV3ERC20.sol";
 import "../interfaces/IFactory.sol";
 import "../interfaces/IERC20Template.sol";
 import "../utils/ERC721RolesAddress.sol";
+import "../utils/ERC721/ERC721Enumerable.sol";
 
 
 contract ERC721Template is
     ERC721("Template", "TemplateSymbol"),
     ERC721RolesAddress,
+    ERC721Enumerable,
     ERC725Ocean,
     ReentrancyGuard
 {
