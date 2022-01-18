@@ -36,8 +36,7 @@ contract ERC725Ocean is ERC165Storage, IERC725X, IERC725Y  {
 
    
     constructor() {
-       
-
+        _registerInterface(0x80ac58cd);
         _registerInterface(_INTERFACE_ID_ERC725X);
         _registerInterface(_INTERFACE_ID_ERC725Y);
     }
